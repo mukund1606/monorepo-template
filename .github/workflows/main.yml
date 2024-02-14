@@ -18,9 +18,12 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: Link
+      - name: Lint
         run: pnpm lint
       - name: Build
         run: pnpm build
       - name: Test
         run: pnpm test
+    env:
+      DATABASE_URL: 'postgresql://postgres:password@localhost:5432/postgres'
+      NEXTAUTH_SECRET: 'secret'
