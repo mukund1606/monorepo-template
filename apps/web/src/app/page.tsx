@@ -1,4 +1,4 @@
-import { add, subtract } from "@mukund1606/my-package";
+import { add, subtract } from "@mukund1606/my-demo-package";
 
 export default function Home() {
   return (
