@@ -1,7 +1,7 @@
 {
 	"name": "@mukund1606/my-demo-package",
 	"license": "MIT",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Test Package",
 	"author": "Mukund Mittal",
 	"main": "dist/index.js",
