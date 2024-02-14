@@ -5,6 +5,7 @@
 	"scripts": {
 		"build": "turbo build",
 		"dev": "turbo dev",
+		"commit": "cz",
 		"lint": "turbo lint",
 		"test": "turbo test",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -21,6 +22,11 @@
 		"node": ">=18"
 	},
 	"dependencies": {
-		"@changesets/cli": "^2.27.1"
+		"@changesets/cli": "^2.27.1",
+		"@commitlint/cli": "^18.6.1",
+		"@commitlint/config-conventional": "^18.6.2",
+		"@commitlint/cz-commitlint": "^18.6.1",
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0"
 	}
 }
