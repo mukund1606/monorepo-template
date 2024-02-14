@@ -1,0 +1,30 @@
+{
+	"name": "@mukund1606/my-package",
+	"license": "MIT",
+	"version": "0.0.1",
+	"description": "Test Package",
+	"author": "Mukund Mittal",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup --silent",
+		"lint": "prettier --write src/ test/",
+		"dev": "npm run build -- --watch",
+		"test": "jest"
+	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@repo/eslint-config": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
+		"@types/jest": "^29.5.12",
+		"@types/node": "^20.11.17",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.1.2",
+		"ts-node": "^10.9.2",
+		"tsup": "^8.0.2",
+		"typescript": "^5.3.3"
+	}
+}

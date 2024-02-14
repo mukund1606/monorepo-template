@@ -13,6 +13,7 @@
 		"lib": ["es2022", "DOM", "DOM.Iterable"],
 
 		"declaration": true,
+    "sourceMap": true,
 		"declarationMap": true,
 		"incremental": false,
 		"module": "NodeNext",

@@ -6,7 +6,9 @@
 		"build": "turbo build",
 		"dev": "turbo dev",
 		"lint": "turbo lint",
-		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+		"test": "turbo test",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"publish-packages": "turbo run build lint test && changeset version && changeset publish"
 	},
 	"devDependencies": {
 		"@repo/eslint-config": "workspace:*",
@@ -17,5 +19,8 @@
 	"packageManager": "pnpm@8.9.0",
 	"engines": {
 		"node": ">=18"
+	},
+	"dependencies": {
+		"@changesets/cli": "^2.27.1"
 	}
 }

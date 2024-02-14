@@ -4,7 +4,7 @@
 	"pipeline": {
 		"build": {
 			"dependsOn": ["^build"],
-			"outputs": [".next/**", "!.next/cache/**"],
+			"outputs": [".next/**", "!.next/cache/**", "dist/**"],
 			"env": [
 				"NODE_ENV",
 				"VERCEL_URL",
@@ -22,6 +22,10 @@
 		"dev": {
 			"cache": false,
 			"persistent": true
+		},
+		"test": {
+			"dependsOn": ["^test"],
+			"env": ["NODE_ENV"]
 		}
 	}
 }
